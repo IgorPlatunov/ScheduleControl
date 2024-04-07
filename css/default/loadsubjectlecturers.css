@@ -1,0 +1,26 @@
+#open-btn { background-image: url("content/open.webp"); }
+#save-btn { background-image: url("content/save.webp"); }
+
+#loads-container
+{
+	float: right;
+	margin-right: 1rem;
+}
+
+#load-data-table,
+.subject-lecturers-table,
+.subject-lecturers-copy
+{
+	width: 100%;
+}
+
+#load-data-table > thead > tr > th,
+#load-data-table > tbody > tr > td
+{
+	padding: 0.25rem;
+}
+
+.subject-lecturers-main-cell
+{
+	width: 10rem;
+}

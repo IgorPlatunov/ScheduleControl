@@ -1,0 +1,119 @@
+#collection-actions-update { background-image: url("content/update.webp"); }
+#collection-actions-save { background-image: url("content/save.webp"); }
+#collection-actions-addrow { background-image: url("content/add.webp"); }
+#collection-actions-view[data-view="table"] { background-image: url("content/table.webp"); }
+#collection-actions-view[data-view="list"] { background-image: url("content/list.webp"); }
+#collection-actions-pkeys:not(.pkey-show) { background-image: url("content/key2.webp"); }
+#collection-actions-pkeys.pkey-show { background-image: url("content/key.webp"); }
+#collection-actions-width { background-image: url("content/width.webp"); }
+
+#collection-options
+{
+	margin: 0.5rem 0;
+}
+
+#collection-options > span
+{
+	float: right;
+}
+
+#collection-options > span > label
+{
+	margin-left: 2rem;
+}
+
+#collection-options::after
+{
+	content: "";
+	clear: both;
+	display: table;
+}
+
+#collection-options-limit,
+#collection-options-page
+{
+	width: 5rem;
+	min-width: 5rem;
+}
+
+#collection-table.table-width
+{
+	width: 100%;
+}
+
+#collection-table-columns > th > div
+{
+	display: grid;
+	grid-template-columns: auto 2rem;
+	align-items: center;
+}
+
+#collection-table input[type="checkbox"],
+.collection-table-row-actions > *
+{
+	margin: 0.5rem 0;
+	height: 1rem !important;
+}
+
+.collection-table-row-actions > *
+{
+	width: 1rem !important;
+}
+
+#collection-table > tbody > tr.row-added { background-color: rgb(69, 62, 62); }
+#collection-table > tbody > tr.row-added:nth-child(even) { background-color: rgb(82, 73, 73); }
+#collection-table > tbody > tr.row-added:hover { background-color: rgb(98, 88, 88); }
+
+#collection-table > tbody > tr.row-selected { background-color: rgb(66, 52, 73); }
+#collection-table > tbody > tr.row-selected:nth-child(even) { background-color: rgb(78, 60, 87); }
+#collection-table > tbody > tr.row-selected:hover { background-color: rgb(93, 72, 104); }
+
+#collection-table > tbody > tr.row-added.row-selected { background-color: rgb(73, 73, 52); }
+#collection-table > tbody > tr.row-added.row-selected:nth-child(even) { background-color: rgb(87, 87, 60); }
+#collection-table > tbody > tr.row-added.row-selected:hover { background-color: rgb(104, 104, 72); }
+
+.row-added .collection-table-row-select
+{
+	accent-color: green;
+}
+
+#collection-table-colgroup-actions
+{
+	width: 5rem;
+}
+
+.collection-table-sort-btn
+{
+	float: right;
+}
+
+.collection-table-row-actions
+{
+	width: 5rem;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-around;
+	justify-content: space-evenly;
+}
+
+.collection-table-row-delete:not(.row-for-delete, .row-for-delete-part)
+{ background-image: url("content/delete.webp"); }
+
+.collection-table-row-delete.row-for-delete
+{ background-image: url("content/delete2.webp"); }
+
+.collection-table-row-delete.row-for-delete-part
+{ background-image: url("content/delete3.webp"); }
+
+.collection-table-row-hide
+{ background-image: url("content/hide.webp"); }
+
+.collection-table-row-copy
+{ background-image: url("content/copy.webp"); }
+
+.collection-table-row-object-btn
+{
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+}

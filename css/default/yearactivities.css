@@ -1,0 +1,50 @@
+.year-activities-table th,
+.year-activities-table td
+{
+	padding: 0.25rem;
+}
+
+.year-activities-table th
+{
+	font-size: 0.6rem;
+}
+
+.year-activities-act
+{
+	text-align: center;
+	z-index: 50;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.year-activities-act-2-semester { background-color: rgba(255, 255, 0, 0.2); }
+.year-activities-act:hover { background-color: rgba(255, 255, 255, 0.1); }
+.year-activities-act-2-semester:hover { background-color: rgba(255, 255, 0, 0.3); }
+
+.year-activities-mover
+{
+	background-color: rgb(0, 180, 0);
+	cursor: ew-resize;
+	z-index: 60;
+}
+
+.year-activities-helper
+{
+	display: none;
+	position: absolute;
+	width: max-content;
+	cursor: default;
+	top: 100%;
+	right: 100%;
+	border: 1px solid rgb(150, 150, 150);
+	background-color: rgb(50, 50, 50);
+	padding: 0.5rem;
+	z-index: 75;
+}
+
+.year-activities-mover:hover > .year-activities-helper,
+.year-activities-moving > .year-activities-helper
+{
+	display: block;
+}

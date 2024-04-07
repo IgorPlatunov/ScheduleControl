@@ -1,0 +1,61 @@
+#add-btn { background-image: url("content/add.webp"); }
+#remove-btn { background-image: url("content/remove.webp"); }
+#clear-btn { background-image: url("content/clear.webp"); }
+#open-btn { background-image: url("content/open.webp"); }
+#export-btn { background-image: url("content/export.webp"); }
+#update-btn { background-image: url("content/update.webp"); }
+#save-btn { background-image: url("content/save.webp"); }
+#delete-btn { background-image: url("content/delete.webp"); }
+
+#load-data-table
+{
+	width: 100%;
+	margin: 0.5rem 0;
+}
+
+#groups-table
+{
+	float: right;
+	min-width: 30rem;
+	margin: 0.5rem 0;
+}
+
+#groups-table th,
+#load-data-table th
+{
+	padding: 0.25rem;
+}
+
+#editor-info > div
+{
+	margin: 0.5rem 0;
+}
+
+#editor-info > div > label
+{
+	min-width: 12rem;
+	display: inline-block;
+}
+
+#editor-info > div > input,
+#editor-info > div > select
+{
+	min-width: 17rem;
+}
+
+#groups-and-info
+{
+	display: flex;
+	justify-content: space-between;
+}
+
+th.load-semester1 { background-color: rgb(73, 61, 52); }
+th.load-semester2 { background-color: rgb(73, 52, 61); }
+
+tr > td.load-semester1 { background-color: rgb(73, 73, 52); }
+tr:nth-child(even) > td.load-semester1 { background-color: rgb(87, 87, 60); }
+tr:hover > td.load-semester1 { background-color: rgb(104, 104, 72); }
+
+tr > td.load-semester2 { background-color: rgb(73, 52, 73); }
+tr:nth-child(even) > td.load-semester2 { background-color: rgb(87, 60, 87); }
+tr:hover > td.load-semester2 { background-color: rgb(104, 72, 104); }

@@ -1,0 +1,66 @@
+#update-btn { background-image: url("content/update.webp"); }
+#export-btn { background-image: url("content/export.webp"); }
+
+#page-header > span > label,
+#page-header > span > input[type="button"]
+{
+	margin-left: 2rem;
+}
+
+#page-header > span:not(:first-child)
+{
+	margin-right: 1rem;
+}
+
+#lecturer-load,
+#subjects-info
+{
+	width: 100%;
+	margin: 1rem 0;
+}
+
+#lecturer-load td,
+#lecturer-load th,
+#subjects-info tbody td,
+#subjects-info tr:first-child th
+{
+	padding: 0.25rem;
+}
+
+#lecturer-load thead tr:first-child th
+{
+	padding: 0;
+}
+
+#lecturer-load thead tr:first-child th div
+{
+	display: grid;
+	grid-template-columns: auto min-content;
+	align-items: center;
+}
+
+.lecturer-load-collapsed > thead > tr:not(:first-child),
+.lecturer-load-collapsed > tbody
+{
+	display: none;
+}
+
+#lecturer-load tbody tr.subject-name-row td:not(:first-child, :nth-child(2)),
+#subjects-info tbody tr.subject-name-row td:not(:first-child, :nth-child(2)),
+#lecturer-load tbody tr:not(.subject-name-row) td:not(:first-child),
+#subjects-info tbody tr:not(.subject-name-row) td:not(:first-child)
+{
+	text-align: right;
+}
+
+#subjects-info thead th div
+{
+	display: grid;
+	grid-template-columns: auto 2rem;
+	align-items: center;
+}
+
+.subject-filter
+{
+	padding: 0.5rem 0;
+}

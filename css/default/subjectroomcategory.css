@@ -1,0 +1,48 @@
+#clear-btn { background-image: url("content/clear.webp"); }
+#open-btn { background-image: url("content/open.webp"); }
+#save-btn { background-image: url("content/save.webp"); }
+#delete-btn { background-image: url("content/delete.webp"); }
+
+#editor-info
+{
+	width: 100%;
+	margin-top: 1rem;
+}
+
+#editor-info > div
+{
+	float: right;
+}
+
+#editor-info > div > label
+{
+	margin-left: 2rem;
+}
+
+#editor-info::after
+{
+	content: "";
+	clear: both;
+	display: table;
+}
+
+#objects-info
+{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 1rem;
+	align-items: start;
+}
+
+#subjects-table,
+#rooms-table
+{
+	min-width: 45%;
+}
+
+#subjects-table th,
+#rooms-table th
+{
+	padding: 0.5rem;
+}

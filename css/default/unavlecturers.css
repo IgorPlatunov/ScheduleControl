@@ -1,0 +1,83 @@
+#add-btn { background-image: url("content/add.webp"); }
+#update-btn { background-image: url("content/update.webp"); }
+
+#lecturer-container
+{
+	margin-right: 1rem;
+}
+
+section
+{
+	margin: 0.5rem 0;
+	padding: 0.5rem;
+	border-top: 2px solid rgb(150, 150, 150);
+}
+
+section::after
+{
+	content: "";
+	clear: both;
+	display: table;
+}
+
+h2
+{
+	font-size: 1.5rem;
+	font-weight: inherit;
+}
+
+#new-unav-container
+{
+	float: left;
+	margin-top: 1rem;
+	width: fit-content;
+	display: grid;
+	align-items: center;
+	grid-template-columns: 1fr 2fr;
+	row-gap: 0.25rem;
+	column-gap: 0.25rem;
+}
+
+#new-unav-container > span
+{
+	grid-column-start: 1;
+	grid-column-end: -1;
+}
+
+#new-unav-container input[type="checkbox"]
+{
+	height: 1rem;
+}
+
+#new-unav-period-container
+{
+	float: right;
+	width: fit-content;
+	display: grid;
+	align-items: center;
+	grid-template-columns: 1fr 1fr;
+	row-gap: 0.25rem;
+	column-gap: 0.25rem;
+}
+
+#new-unav-period-container[hidden]
+{
+	display: none;
+}
+
+#unavs-table
+{
+	margin-top: 1rem;
+	width: 100%;
+}
+
+#unavs-table th,
+#unavs-table td
+{
+	padding: 0.25rem;
+}
+
+#unavs-table > tbody > tr
+{
+	cursor: pointer;
+}

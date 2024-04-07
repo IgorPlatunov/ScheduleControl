@@ -1,0 +1,67 @@
+#add-btn { background-image: url("content/add.webp"); }
+#remove-btn { background-image: url("content/remove.webp"); }
+#clear-btn { background-image: url("content/clear.webp"); }
+#copy-btn { background-image: url("content/copy.webp"); }
+#open-btn { background-image: url("content/open.webp"); }
+#save-btn { background-image: url("content/save.webp"); }
+#delete-btn { background-image: url("content/delete.webp"); }
+
+#editor-info,
+#budget-info
+{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 1rem;
+	align-items: start;
+}
+
+#editor-info > div
+{
+	display: grid;
+	grid-template-columns: 0.8fr 1fr 0.8fr 1fr;
+	row-gap: 0.5rem;
+	column-gap: 1rem;
+	align-items: center;
+}
+
+#editor-info > div:first-child
+{
+	grid-template-columns: 1fr 1fr;
+}
+
+#editor-info > div:first-child > input[type="checkbox"]
+{
+	height: 1rem;
+}
+
+#graph-container,
+.year-activities-table,
+#subjects-table
+{
+	margin-top: 1rem;
+	width: 100%;
+}
+
+#budget-table > thead > tr > *,
+#budget-designations tr > *,
+#subjects-table > thead > tr > th
+{
+	padding: 0.25rem;
+}
+
+#budget-table,
+#budget-designations
+{
+	min-width: 45%;
+}
+
+#budget-designations > tbody td:last-child
+{
+	text-align: right;
+}
+
+.new-course-input
+{
+	padding: 0;
+}

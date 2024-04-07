@@ -1,0 +1,208 @@
+#add-btn { background-image: url("content/add.webp"); }
+#remove-btn { background-image: url("content/remove.webp"); }
+#clear-btn { background-image: url("content/clear.webp"); }
+#open-btn { background-image: url("content/open.webp"); }
+#export-btn { background-image: url("content/export.webp"); }
+#update-btn { background-image: url("content/update.webp"); }
+#configure-btn { background-image: url("content/configure.webp"); }
+#validate-btn { background-image: url("content/validate.webp"); }
+#save-btn { background-image: url("content/save.webp"); }
+#delete-btn { background-image: url("content/delete.webp"); }
+
+.configuration-body > section > span
+{
+	font-weight: 900;
+	padding: 0.5rem 0;
+	display: block;
+	border-bottom: 0.2rem solid gray;
+	border-top: 0.2rem solid gray;
+}
+
+.configuration-body > section > div
+{
+	margin: 1rem 0;
+	display: grid;
+	grid-template-columns: auto 15rem 5rem 5rem;
+	row-gap: 1rem;
+	column-gap: 1rem;
+	align-items: center;
+}
+
+.configuration-percent,
+.configuration-unmodifiable
+{
+	text-align: center;
+}
+
+.configuration-unmodifiable
+{
+	grid-column-start: 2;
+	grid-column-end: 5;
+}
+
+#unalloc-pairs-table
+{
+	width: 100%;
+	margin: 0.5rem 0;
+}
+
+#unalloc-pairs-table th,
+#unalloc-pairs-table td
+{
+	padding: 0.5rem;
+}
+
+#unalloc-pairs-table-close
+{
+	float: right;
+	padding: 0;
+}
+
+#editor-info
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	width: 100%;
+	margin: 0.5rem 0;
+}
+
+#editor-info > span > div
+{
+	margin: 0.5rem 0;
+}
+
+#editor-info > span:first-child label
+{
+	display: inline-block;
+	width: 10rem;
+}
+
+#editor-info > span:last-child label
+{
+	display: inline-block;
+	width: 5rem;
+}
+
+#editor-info > span:last-child input,
+#editor-info > span:last-child select
+{
+	min-width: 17rem;
+}
+
+#schedule-container
+{
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	column-gap: 1rem;
+	row-gap: 1rem;
+}
+
+#schedule-container input[type="checkbox"]
+{
+	margin: 0.5rem 0;
+}
+
+#schedule-container td
+{
+	text-align: center;
+}
+
+#schedule-container > table th:not(:has( > *)),
+#schedule-container > table td:not(:has( > *))
+{
+	padding: 0.5rem;
+}
+
+.schedule-load-col-info
+{
+	width: 10%;
+}
+
+.schedule-load-col-type
+{
+	min-width: 7rem;
+}
+
+.schedule-load-lock-grid
+{
+	display: grid;
+	grid-template-columns: 2rem auto;
+}
+
+.schedule-load-name-grid
+{
+	display: grid;
+	grid-template-columns: auto min-content;
+	align-items: center;
+	text-align: center;
+}
+
+#schedule-container > table.schedule-load-collapsed > tbody,
+#schedule-container > table.schedule-load-collapsed > thead > tr:not(:first-child)
+{
+	display: none;
+}
+
+.schedule-load-pair-numcell
+{
+	display: grid;
+	grid-template-columns: auto min-content;
+	grid-template-rows: auto auto;
+	height: 100%;
+	align-items: center;
+}
+
+.schedule-load-pair-numcell > span
+{
+	padding: 0.5rem;
+	grid-row-start: 1;
+	grid-row-end: 3;
+}
+
+.schedule-load-pair-numcell > button
+{
+	padding: 0.25rem;
+	height: 100%;
+	background-color: transparent;
+}
+
+.schedule-load-pair-hours
+{
+	display: grid;
+	grid-template-columns: 0.25fr 1fr;
+	align-items: center;
+}
+
+.schedule-load-pair-weeks
+{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.schedule-load-pair-priorityinfo > *
+{
+	width: 100%;
+	display: block;
+}
+
+.schedule-load-pair-hours[hidden],
+.schedule-load-pair-weeks[hidden],
+.schedule-load-pair-priorityinfo[hidden]
+{ display: none; }
+
+.schedule-load-pair-hours > .foreign-key-select-btn,
+.schedule-load-pair-weeks > .foreign-key-select-btn
+{
+	padding: 0.5rem 0;
+}
+
+#schedule-container > table .foreign-key-select-btn
+{
+	text-align: center;
+}
+
+.schedule-load-locked > tbody > tr, .schedule-load-pair-locked { background-color: rgb(66, 52, 73); }
+.schedule-load-locked > tbody > tr:nth-child(even), .schedule-load-pair-locked:nth-child(even) { background-color: rgb(78, 60, 87); }
+.schedule-load-locked > tbody > tr:hover, .schedule-load-pair-locked:hover { background-color: rgb(93, 72, 104); }

@@ -1,0 +1,61 @@
+#open-btn { background-image: url("content/open.webp"); }
+#export-btn { background-image: url("content/export.webp"); }
+#update-btn { background-image: url("content/update.webp"); }
+#clear-btn { background-image: url("content/clear.webp"); }
+#validate-btn { background-image: url("content/validate.webp"); }
+#save-btn { background-image: url("content/save.webp"); }
+#delete-btn { background-image: url("content/delete.webp"); }
+
+#editor-info
+{
+	margin: 0.5rem 0;
+}
+
+#editor-info > span
+{
+	float: right;
+}
+
+#editor-info::after
+{
+	content: "";
+	clear: both;
+	display: table;
+}
+
+#editor-info-year
+{
+	min-width: 17rem;
+}
+
+#discrepancy-table
+{
+	width: 100%;
+}
+
+#discrepancy-table-hide
+{
+	padding: 0;
+	float: right;
+}
+
+#discrepancy-table th,
+#discrepancy-table td
+{
+	padding: 0.25rem;
+}
+
+.year-activities-table
+{
+	width: 100%;
+}
+
+.year-activities-table tr:has(.graph-group-course-1) { background-color:  rgb(93, 78, 76); }
+.year-activities-table tr:has(.graph-group-course-2) { background-color:  rgb(85, 93, 76); }
+.year-activities-table tr:has(.graph-group-course-3) { background-color:  rgb(66, 78, 103); }
+.year-activities-table tr:has(.graph-group-course-4) { background-color:  rgb(78, 66, 103); }
+
+.year-activities-table > tbody > tr > td
+{
+	text-align: center;
+}

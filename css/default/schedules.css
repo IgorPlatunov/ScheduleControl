@@ -1,0 +1,181 @@
+#add-btn { background-image: url("content/add.webp"); }
+#clear-btn { background-image: url("content/clear.webp"); }
+#open-btn { background-image: url("content/open.webp"); }
+#view-btn { background-image: url("content/width.webp"); }
+#export-btn { background-image: url("content/export.webp"); }
+#update-btn { background-image: url("content/update.webp"); }
+#configure-btn { background-image: url("content/configure.webp"); }
+#validate-btn { background-image: url("content/validate.webp"); }
+#save-btn { background-image: url("content/save.webp"); }
+#delete-btn { background-image: url("content/delete.webp"); }
+
+.configuration-body > section > span
+{
+	font-weight: 900;
+	padding: 0.5rem 0;
+	display: block;
+	border-bottom: 0.2rem solid gray;
+	border-top: 0.2rem solid gray;
+}
+
+.configuration-body > section > div
+{
+	margin: 1rem 0;
+	display: grid;
+	grid-template-columns: auto 15rem 5rem 5rem;
+	row-gap: 1rem;
+	column-gap: 1rem;
+	align-items: center;
+}
+
+.configuration-percent,
+.configuration-unmodifiable
+{
+	text-align: center;
+}
+
+.configuration-unmodifiable
+{
+	grid-column-start: 2;
+	grid-column-end: 5;
+}
+
+#editor-info
+{
+	margin: 0.5rem 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+#schedule-container
+{
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	column-gap: 1rem;
+	row-gap: 1rem;
+}
+
+#schedule-container.schedules-count2
+{
+	grid-template-columns: 1fr 1fr;
+}
+
+#schedule-container > table th:not(:has( > *)),
+#schedule-container > table td:not(:has( > *))
+{
+	padding: 0.5rem;
+}
+
+#schedule-container > table > tbody,
+#schedule-container > table > tbody > tr > td > .foreign-key-select-btn
+{
+	text-align: center;
+}
+
+.schedule-group-lock-grid
+{
+	display: grid;
+	grid-template-columns: 2rem auto;
+	align-items: center;
+}
+
+.schedule-group-name-grid
+{
+	display: grid;
+	grid-template-columns: auto min-content;
+	align-items: center;
+	text-align: center;
+}
+
+#schedule-container > table.schedule-group-collapsed > tbody,
+#schedule-container > table.schedule-group-collapsed > thead > tr:not(:first-child)
+{
+	display: none;
+}
+
+.schedule-group-lectrooms-td
+{
+	padding: 0.25rem;
+}
+
+.schedule-group-lectrooms-td > div
+{
+	display: grid;
+	grid-template-columns: auto 2rem;
+	width: 100%;
+	align-items: center;
+	column-gap: 0.25rem;
+}
+
+.schedule-group-lectrooms
+{
+	width: 100%;
+}
+
+.schedule-group-lectrooms-roomcell
+{
+	width: 6rem;
+}
+
+.schedule-group-col-info
+{
+	width: 10%;
+}
+
+.schedule-group-pair-numcell,
+.schedule-group-hour-numcell
+{
+	display: grid;
+	grid-template-columns: auto min-content;
+	height: 100%;
+	align-items: center;
+}
+
+.schedule-group-pair-numcell
+{
+	grid-template-rows: auto auto;
+}
+
+.schedule-group-pair-numcell > span
+{
+	padding: 0.5rem;
+	grid-row-start: 1;
+	grid-row-end: 3;
+	cursor: pointer;
+}
+
+.schedule-group-pair-numcell > button,
+.schedule-group-hour-numcell > button
+{
+	padding: 0.25rem;
+	height: 100%;
+	background-color: transparent;
+}
+
+.schedule-group-hour-aspair > .schedule-group-hour-numcell
+{
+	grid-template-columns: auto;
+}
+
+.schedule-group-hour-aspair > .schedule-group-hour-numcell > button
+{
+	display: none;
+}
+
+.schedule-group-hour-priorityinfo > *
+{
+	width: 100%;
+	display: block;
+}
+
+.schedule-group-occupation-dialog-container
+{
+	display: grid;
+	grid-template-columns: 1fr;
+	row-gap: 0.5rem;
+}
+
+.schedule-group-locked > tbody > tr, .schedule-group-hour-locked { background-color: rgb(66, 52, 73); }
+.schedule-group-locked > tbody > tr:nth-child(even), .schedule-group-hour-locked:nth-child(even) { background-color: rgb(78, 60, 87); }
+.schedule-group-locked > tbody > tr:hover, .schedule-group-hour-locked:hover { background-color: rgb(93, 72, 104); }

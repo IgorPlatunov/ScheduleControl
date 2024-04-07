@@ -1,0 +1,64 @@
+#update-btn { background-image: url("content/update.webp"); }
+#export-btn { background-image: url("content/export.webp"); }
+
+#page-header > span > label,
+#page-header > span > input[type="button"]
+{
+	margin-left: 2rem;
+}
+
+#page-header > span:not(:first-child)
+{
+	margin-right: 1rem;
+}
+
+#general-info,
+#subjects-info
+{
+	width: 100%;
+	margin: 1rem 0;
+}
+
+#general-info td,
+#general-info th,
+#subjects-info tbody td,
+#subjects-info tr:first-child th
+{
+	padding: 0.25rem;
+}
+
+#general-info thead tr:first-child th
+{
+	padding: 0;
+}
+
+#general-info thead tr:first-child th div
+{
+	display: grid;
+	grid-template-columns: auto min-content;
+	align-items: center;
+}
+
+#general-info tbody td:last-child,
+#subjects-info tbody td:not(:first-child)
+{
+	text-align: right;
+}
+
+.general-info-collapsed > thead > tr:not(:first-child),
+.general-info-collapsed > tbody
+{
+	display: none;
+}
+
+#subjects-info thead th div
+{
+	display: grid;
+	grid-template-columns: auto 2rem;
+	align-items: center;
+}
+
+.subject-filter
+{
+	padding: 0.5rem 0;
+}
